@@ -56,5 +56,4 @@ jobs:
           platforms: linux/amd64, linux/arm64
           file: ./java-temurin/${{ matrix.tag }}/Dockerfile
           push: true
-          tags: ghcr.io/lovinoes/images:java-temurin${{ matrix.tag }}_temurin
-          
+          tags: ghcr.io/lovinoes/images:java${{ matrix.tag }}_temurin
