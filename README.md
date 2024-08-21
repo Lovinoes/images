@@ -1,5 +1,5 @@
 # Image Overview
-Docker images designed for the use with the Pterodactyl's Egg system
+Docker images designed for the use with the Pterodactyl's Egg system *(compatible with Pelican/Pterodactyl/WISP...)*
 
 - **Java Amazon Corretto**
   - Java 8 `ghcr.io/lovinoes/images:java8_corretto`
