@@ -1,22 +1,22 @@
 # Image Overview
 Docker images designed for the use with the Pterodactyl's Egg system *(compatible with Pelican/Pterodactyl/WISP...)*
 
-- **Java Amazon Corretto**
+- **[Java Amazon Corretto](https://github.com/Lovinoes/images/tree/main/java-corretto)**
   - Java 8 `ghcr.io/lovinoes/images:java8_corretto`
   - Java 11 `ghcr.io/lovinoes/images:java11_corretto`
   - Java 17 `ghcr.io/lovinoes/images:java17_corretto`
   - Java 21 `ghcr.io/lovinoes/images:java21_corretto`
-- **Java Azul Zulu**
+- **[Java Azul Zulu](https://github.com/Lovinoes/images/tree/main/java-zulu)**
   - Java 8 `ghcr.io/lovinoes/images:java8_zulu`
   - Java 11 `ghcr.io/lovinoes/images:java11_zulu`
   - Java 17 `ghcr.io/lovinoes/images:java17_zulu`
   - Java 21 `ghcr.io/lovinoes/images:java21_zulu`
-- **Java Eclipse Temurin**
+- **[Java Eclipse Temurin](https://github.com/Lovinoes/images/tree/main/java-temurin)**
   - Java 8 `ghcr.io/lovinoes/images:java8_temurin`
   - Java 11 `ghcr.io/lovinoes/images:java11_temurin`
   - Java 17 `ghcr.io/lovinoes/images:java17_temurin`
   - Java 21 `ghcr.io/lovinoes/images:java21_temurin`
-- **Java Shenandoah (Shipilev Experimental)**
+- **[Java Shenandoah (Shipilev Experimental)](https://github.com/Lovinoes/images/tree/main/java-shenandoah)**
   - Java 8 `ghcr.io/lovinoes/images:java8_shenandoah`
   - Java 11 `ghcr.io/lovinoes/images:java11_shenandoah`
   - Java 17 `ghcr.io/lovinoes/images:java17_shenandoah`
