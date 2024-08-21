@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   build_and_push:
-    name: "java_${{ matrix.tag }}_corretto"
+    name: "java${{ matrix.tag }}_corretto"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
