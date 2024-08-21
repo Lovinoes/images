@@ -53,7 +53,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./java-corretto
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64, linux/arm64
           file: ./java-corretto/${{ matrix.tag }}/Dockerfile
           push: true
           tags: ghcr.io/lovinoes/images:java${{ matrix.tag }}_corretto
