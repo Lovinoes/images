@@ -19,7 +19,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  push:
+  build_and_push:
     name: "java${{ matrix.tag }}_temurin"
     runs-on: ubuntu-latest
     strategy:
@@ -56,5 +56,5 @@ jobs:
           platforms: linux/amd64, linux/arm64
           file: ./java-temurin/${{ matrix.tag }}/Dockerfile
           push: true
-          tags: ghcr.io/lovinoes/images:java-temurin${{ matrix.tag }}
+          tags: ghcr.io/lovinoes/images:java-temurin${{ matrix.tag }}_temurin
           
