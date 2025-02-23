@@ -1,4 +1,4 @@
-FROM        eclipse-temurin:11-focal
+FROM        eclipse-temurin:11-jdk-noble
 
 # Metadata
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
