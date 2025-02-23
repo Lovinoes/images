@@ -1,4 +1,4 @@
-FROM        eclipse-temurin:21-jammy
+FROM        eclipse-temurin:21-jdk-noble
 
 # Metadata
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
