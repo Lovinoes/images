@@ -6,54 +6,18 @@ Docker images designed for the use with the Pterodactyl's Egg system *(compatibl
   - Java 11 `ghcr.io/lovinoes/images:java11_corretto`
   - Java 17 `ghcr.io/lovinoes/images:java17_corretto`
   - Java 21 `ghcr.io/lovinoes/images:java21_corretto`
-<details>
-<summary><em>Copy&Paste</em></summary>
-<br>
-
-```
-Java 21|ghcr.io/lovinoes/images:java21_corretto
-Java 17|ghcr.io/lovinoes/images:java17_corretto
-Java 11|ghcr.io/lovinoes/images:java11_corretto
-Java 8|ghcr.io/lovinoes/images:java8_corretto
-```
-
-</details>
  
 - **[Java Azul Zulu](https://github.com/Lovinoes/images/tree/main/java-zulu)**
   - Java 8 `ghcr.io/lovinoes/images:java8_zulu`
   - Java 11 `ghcr.io/lovinoes/images:java11_zulu`
   - Java 17 `ghcr.io/lovinoes/images:java17_zulu`
   - Java 21 `ghcr.io/lovinoes/images:java21_zulu`
-<details>
-<summary><em>Copy&Paste</em></summary>
-<br>
-
-```
-Java 21|ghcr.io/lovinoes/images:java21_zulu
-Java 17|ghcr.io/lovinoes/images:java17_zulu
-Java 11|ghcr.io/lovinoes/images:java11_zulu
-Java 8|ghcr.io/lovinoes/images:java8_zulu
-```
-
-</details>
 
 - **[Java Eclipse Temurin](https://github.com/Lovinoes/images/tree/main/java-temurin)**
   - Java 8 `ghcr.io/lovinoes/images:java8_temurin`
   - Java 11 `ghcr.io/lovinoes/images:java11_temurin`
   - Java 17 `ghcr.io/lovinoes/images:java17_temurin`
   - Java 21 `ghcr.io/lovinoes/images:java21_temurin`
-<details>
-<summary><em>Copy&Paste</em></summary>
-<br>
-
-```
-Java 21|ghcr.io/lovinoes/images:java21_temurin
-Java 17|ghcr.io/lovinoes/images:java17_temurin
-Java 11|ghcr.io/lovinoes/images:java11_temurin
-Java 8|ghcr.io/lovinoes/images:java8_temurin
-```
-
-</details>
 
 ## Star History
 
