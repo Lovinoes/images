@@ -32,7 +32,7 @@ jobs:
           - 21
     steps:
       - name: Git checkout for Github repository workspace
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup QEMU for multiarch builds
         uses: docker/setup-qemu-action@v3
