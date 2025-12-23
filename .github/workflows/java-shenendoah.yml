@@ -1,4 +1,4 @@
-name: build java_corretto
+name: build java_shenandoah
 
 on:
   workflow_dispatch:
@@ -8,19 +8,19 @@ on:
     branches:
       - main
     paths:
-      - java-corretto/**
+      - java-shenandoah/**
 
 permissions:
   actions: read
   packages: write
 
 concurrency:
-  group: java-corretto-${{ github.ref }}-1
+  group: java-shenandoah-${{ github.ref }}-1
   cancel-in-progress: true
 
 jobs:
   build_and_push:
-    name: "java${{ matrix.tag }}_corretto"
+    name: "java${{ matrix.tag }}_shenandoah"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -53,8 +53,8 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
-          context: ./java-corretto
+          context: ./java-shenandoah
           platforms: linux/amd64, linux/arm64
-          file: ./java-corretto/${{ matrix.tag }}/Dockerfile
+          file: ./java-shenandoah/${{ matrix.tag }}/Dockerfile
           push: true
-          tags: ghcr.io/lovinoes/images:java${{ matrix.tag }}_corretto
+          tags: ghcr.io/lovinoes/images:java${{ matrix.tag }}_shenandoah
