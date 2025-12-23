@@ -7,7 +7,7 @@ LABEL       org.opencontainers.image.licenses="MIT"
 
 # Install necessary packages
 RUN         yum upgrade -y \
-            && yum install -y curl ca-certificates openssl tar sqlite fontconfig freetype freetype-devel lsof tzdata iproute \
+            && yum install -y ca-certificates openssl tar sqlite fontconfig freetype freetype-devel lsof tzdata iproute \
             git gcc gcc-c++ automake make libtool \
             && yum clean all \
             && rm -rf /var/cache/yum \
