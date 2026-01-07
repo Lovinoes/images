@@ -22,7 +22,7 @@ Docker images designed for the use with the Pterodactyl's Egg system *(compatibl
   - Java 21 `ghcr.io/lovinoes/images:java21_temurin`
   - Java 25 `ghcr.io/lovinoes/images:java25_temurin`
  
-- **[Java Eclipse Shenandoah](https://github.com/Lovinoes/images/tree/main/java-shenandoah)**
+- **[Java Shipilev (Experimental)](https://github.com/Lovinoes/images/tree/main/java-shenandoah)**
   - Java 8 `ghcr.io/lovinoes/images:java8_shenandoah`
   - Java 11 `ghcr.io/lovinoes/images:java11_shenandoah`
   - Java 17 `ghcr.io/lovinoes/images:java17_shenandoah`
