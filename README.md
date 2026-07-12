@@ -31,6 +31,15 @@ Docker images designed for the use with the Pterodactyl's Egg system.
 
 ## Star History
 
+<a href="https://www.star-history.com/?type=date&repos=Lovinoes%2Fimages">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Lovinoes/images&type=date&theme=dark&legend=top-left&sealed_token=XJqyFe-4qCNOmiH2pTO8PJZcsVchhSBo7CnQ9K0gc1qFCgRo8onsdfC9J5ssvpoQkhJ04FopVhHVXvRR1THK014dnKD4EJgvjdeZrf379T8qlF-5fN_LkTDTKv8uC7Ng3LbhPAQvEk18DwYA9__2TywiTYTktK5YKxyjo8XnZDIjO9pxjrJoTlwHmSG4" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Lovinoes/images&type=date&legend=top-left&sealed_token=XJqyFe-4qCNOmiH2pTO8PJZcsVchhSBo7CnQ9K0gc1qFCgRo8onsdfC9J5ssvpoQkhJ04FopVhHVXvRR1THK014dnKD4EJgvjdeZrf379T8qlF-5fN_LkTDTKv8uC7Ng3LbhPAQvEk18DwYA9__2TywiTYTktK5YKxyjo8XnZDIjO9pxjrJoTlwHmSG4" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Lovinoes/images&type=date&legend=top-left&sealed_token=XJqyFe-4qCNOmiH2pTO8PJZcsVchhSBo7CnQ9K0gc1qFCgRo8onsdfC9J5ssvpoQkhJ04FopVhHVXvRR1THK014dnKD4EJgvjdeZrf379T8qlF-5fN_LkTDTKv8uC7Ng3LbhPAQvEk18DwYA9__2TywiTYTktK5YKxyjo8XnZDIjO9pxjrJoTlwHmSG4" />
+ </picture>
+</a>
+
+<!--
 <a href="https://star-history.com/#Lovinoes/images&Date">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Lovinoes/images&type=Date&theme=dark" />
@@ -38,6 +47,7 @@ Docker images designed for the use with the Pterodactyl's Egg system.
     <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Lovinoes/images&type=Date" />
   </picture>
 </a>
+-->
 
 ## License
 This repository is licensed under the MIT License. See the [LICENSE](https://github.com/Lovinoes/images/blob/main/LICENSE) file for more information.
