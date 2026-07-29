@@ -4,6 +4,8 @@ FROM        eclipse-temurin:11-jdk-noble
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
 LABEL       org.opencontainers.image.source="https://github.com/lovinoes/images"
 LABEL       org.opencontainers.image.licenses="MIT"
+LABEL       org.opencontainers.image.title="java11_temurin"
+LABEL       org.opencontainers.image.description="Eclipse Temurin (JDK 11) image."
 
 # Install necessary packages
 RUN         apt-get update -y \

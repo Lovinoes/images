@@ -4,6 +4,8 @@ FROM        shipilev/openjdk:8
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
 LABEL       org.opencontainers.image.source="https://github.com/lovinoes/images"
 LABEL       org.opencontainers.image.licenses="MIT"
+LABEL       org.opencontainers.image.title="java8_shenandoah"
+LABEL       org.opencontainers.image.description="Shipilev OpenJDK / Shenandoah (JDK 8) image."
 
 # Install necessary packages
 RUN         apt-get update -y \

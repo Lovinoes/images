@@ -1,18 +1,18 @@
-FROM        amazoncorretto:11
+FROM        ghcr.io/graalvm/jdk-community:21
 
 # Metadata
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
 LABEL       org.opencontainers.image.source="https://github.com/lovinoes/images"
 LABEL       org.opencontainers.image.licenses="MIT"
-LABEL       org.opencontainers.image.title="java11_corretto"
-LABEL       org.opencontainers.image.description="Amazon Corretto (JDK 11) image."
+LABEL       org.opencontainers.image.title="java21_graalvm-ce"
+LABEL       org.opencontainers.image.description="GraalVM Community Edition (JDK 21) image."
 
-# Install necessary packages
-RUN         yum upgrade -y \
-            && yum install -y curl ca-certificates openssl tar sqlite fontconfig freetype libstdc++.so.6 freetype-devel lsof build-essential tzdata iproute \
-            git gcc gcc-c++ automake make libtool \
-            && yum clean all \
-            && rm -rf /var/cache/yum \
+# Install necessary packages (GraalVM CE images are Oracle Linux slim based; use microdnf)
+RUN         microdnf update -y \
+            && microdnf install -y curl ca-certificates openssl tar gzip git sqlite fontconfig freetype libstdc++ lsof tzdata iproute findutils glibc-langpack-en \
+            gcc gcc-c++ make automake libtool \
+            && microdnf clean all \
+            && rm -rf /var/cache/yum /var/cache/dnf \
             && useradd -m -d /home/container container
 
 # Set locale and language environment variables

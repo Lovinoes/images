@@ -4,6 +4,8 @@ FROM        amazoncorretto:21
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
 LABEL       org.opencontainers.image.source="https://github.com/lovinoes/images"
 LABEL       org.opencontainers.image.licenses="MIT"
+LABEL       org.opencontainers.image.title="java21_corretto"
+LABEL       org.opencontainers.image.description="Amazon Corretto (JDK 21) image."
 
 # Install necessary packages
 RUN         yum upgrade -y \

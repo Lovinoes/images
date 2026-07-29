@@ -4,6 +4,8 @@ FROM        amazoncorretto:17
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
 LABEL       org.opencontainers.image.source="https://github.com/lovinoes/images"
 LABEL       org.opencontainers.image.licenses="MIT"
+LABEL       org.opencontainers.image.title="java17_corretto"
+LABEL       org.opencontainers.image.description="Amazon Corretto (JDK 17) image."
 
 # Install necessary packages
 RUN         yum upgrade -y \

@@ -4,6 +4,8 @@ FROM        eclipse-temurin:17-jdk-noble
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
 LABEL       org.opencontainers.image.source="https://github.com/lovinoes/images"
 LABEL       org.opencontainers.image.licenses="MIT"
+LABEL       org.opencontainers.image.title="java17_temurin"
+LABEL       org.opencontainers.image.description="Eclipse Temurin (JDK 17) image."
 
 # Install necessary packages
 RUN         apt-get update -y \

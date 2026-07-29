@@ -4,6 +4,8 @@ FROM        azul/zulu-openjdk:17
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
 LABEL       org.opencontainers.image.source="https://github.com/lovinoes/images"
 LABEL       org.opencontainers.image.licenses="MIT"
+LABEL       org.opencontainers.image.title="java17_zulu"
+LABEL       org.opencontainers.image.description="Azul Zulu OpenJDK (JDK 17) image."
 
 ENV         DEBIAN_FRONTEND noninteractive
 

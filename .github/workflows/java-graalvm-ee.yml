@@ -1,0 +1,71 @@
+name: build java_graalvm-ee
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 17 1,15 * *" # bi-weekly on 1st and 15th calendar day at 17:00
+  push:
+    branches:
+      - main
+    paths:
+      - java-graalvm-ee/**
+
+permissions:
+  actions: read
+  packages: write
+
+concurrency:
+  group: java-graalvm-ee-${{ github.ref }}-1
+  cancel-in-progress: true
+
+jobs:
+  build_and_push:
+    name: "java${{ matrix.tag }}_graalvm-ee"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        tag:
+          - 17
+          - 21
+          - 25
+    steps:
+      - name: Git checkout for Github repository workspace
+        uses: actions/checkout@v7
+
+      - name: Setup QEMU for multiarch builds
+        uses: docker/setup-qemu-action@v4
+
+      - name: Setup Docker buildx
+        uses: docker/setup-buildx-action@v4
+        with:
+          buildkitd-flags: --debug
+
+      # The Oracle GraalVM (Enterprise Edition) base image lives on the Oracle
+      # Container Registry and is currently pullable anonymously, so no login is
+      # required. If Oracle ever gates the image behind authentication and your
+      # builds start failing while pulling the base image, create the OCR_USERNAME
+      # and OCR_TOKEN repository secrets (an Oracle SSO account / auth token) and
+      # uncomment the step below.
+      # - name: Login to Oracle Container Registry
+      #   uses: docker/login-action@v4
+      #   with:
+      #     registry: container-registry.oracle.com
+      #     username: ${{ secrets.OCR_USERNAME }}
+      #     password: ${{ secrets.OCR_TOKEN }}
+
+      - name: Login to registry
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v7
+        with:
+          context: ./java-graalvm-ee
+          platforms: linux/amd64, linux/arm64
+          file: ./java-graalvm-ee/${{ matrix.tag }}/Dockerfile
+          push: true
+          tags: ghcr.io/lovinoes/images:java${{ matrix.tag }}_graalvm-ee

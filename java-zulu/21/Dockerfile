@@ -4,6 +4,8 @@ FROM        azul/zulu-openjdk:21
 LABEL       author="Lovinoes" maintainer="lovinoes@lovinoes.de"
 LABEL       org.opencontainers.image.source="https://github.com/lovinoes/images"
 LABEL       org.opencontainers.image.licenses="MIT"
+LABEL       org.opencontainers.image.title="java21_zulu"
+LABEL       org.opencontainers.image.description="Azul Zulu OpenJDK (JDK 21) image."
 
 ENV         DEBIAN_FRONTEND noninteractive
 

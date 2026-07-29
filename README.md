@@ -29,6 +29,19 @@ Docker images designed for the use with the Pterodactyl's Egg system.
   - Java 21 `ghcr.io/lovinoes/images:java21_shenandoah`
   - Java 25 `ghcr.io/lovinoes/images:java25_shenandoah`
 
+- **[Java GraalVM Community Edition](https://github.com/Lovinoes/images/tree/main/java-graalvm-ce)**
+  - Java 17 `ghcr.io/lovinoes/images:java17_graalvm-ce`
+  - Java 21 `ghcr.io/lovinoes/images:java21_graalvm-ce`
+  - Java 25 `ghcr.io/lovinoes/images:java25_graalvm-ce`
+
+- **[Java GraalVM Enterprise Edition](https://github.com/Lovinoes/images/tree/main/java-graalvm-ee)**
+  - Java 17 `ghcr.io/lovinoes/images:java17_graalvm-ee`
+  - Java 21 `ghcr.io/lovinoes/images:java21_graalvm-ee`
+  - Java 25 `ghcr.io/lovinoes/images:java25_graalvm-ee`
+
+> [!NOTE]
+> GraalVM is only distributed for Java 17, 21 and 25, so no Java 8 or 11 images are provided for these variants. The Enterprise Edition images are built from [Oracle GraalVM](https://container-registry.oracle.com/ords/ocr/ba/graalvm) (formerly GraalVM Enterprise Edition), which is free to use under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html).
+
 ## Star History
 
 <a href="https://www.star-history.com/?type=date&repos=Lovinoes%2Fimages">
