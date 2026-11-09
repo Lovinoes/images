@@ -1,3 +1,11 @@
+> [!WARNING]
+> **This repository is archived.**
+>
+> I no longer maintain these images or contribute to the Pterodactyl community anymore.
+>
+> 
+> Please check out [Calagopus](https://calagopus.com) and their [images](https://github.com/calagopus/oci-images) instead. They should work fine as a drop-in for Pterodactyl and its forks too.
+
 # Image Overview
 Docker images designed for the use with the Pterodactyl's Egg system.
 
